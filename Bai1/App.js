@@ -7,9 +7,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <LinearGradient 
-      colors={["#C4C4C4", "#28F7AC"]}
+      colors={["rgba(189, 246, 198, 0)","#BDF6C6"]}
       style={styles.bgcolor}
-      start={{ x: 0, y: 0 }}
+      start={{ x: 0, y: 0}}
       end={{ x: 1, y: 1 }}
       >
      
