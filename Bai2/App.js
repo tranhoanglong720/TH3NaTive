@@ -47,6 +47,8 @@ export default function App() {
             fontSize:20,
             textAlign:'center',
             backgroundColor:'#E3C000',
+            fontSize:20,
+            colors:'black',
            
         }}></Button>
       </View>
