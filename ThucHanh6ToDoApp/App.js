@@ -6,13 +6,17 @@ export default function App() {
   const [Lists,setLists]= useState([]);
   const [Data,setData]= useState("");
 
+  const handelSubmit=()=>{
+    setLists([...Lists, Data]);
+    console.log(Lists);
+      setData("");
+  }
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
       <TextInput placeholder="Them Du Lieu" style={styles.textdulieu} onChangeText={(Data)=>{setData(Data)}} value={Data}/>
-      <TouchableOpacity style={styles.btndulieu} onPress={()=>{setLists([...Lists, Data]);
-      setData("");
-      }}>
+      <TouchableOpacity style={styles.btndulieu} onPress={handelSubmit}>
             <Text style={{textAlign:'center',
             fontSize:18,
             fontWeight:'bold',
