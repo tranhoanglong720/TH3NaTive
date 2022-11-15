@@ -14,7 +14,7 @@ function TrangChu({navigation}) {
                 <Text style={styles.about}>around you</Text>
             
             <View style={styles.btnabout}>
-            <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('ListItemcf')}>
+            <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate('BottomTabNavigator')}>
                 <FontAwesome5 name="facebook" size={24} color="blue" />
                 <Text style={styles.textbtn}>Sign With FaceBook</Text>
             </TouchableOpacity>
